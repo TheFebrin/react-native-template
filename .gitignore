@@ -11,6 +11,10 @@ expo-env.d.ts
 web-build/
 dist/
 
+# Expo prebuild output (generated native projects)
+ios/
+android/
+
 # Native builds
 android/build/
 android/app/build/
@@ -52,3 +56,10 @@ tmp/
 # Xcode
 xcuserdata/
 *.xcuserstate
+*.xcresult
+*.xcarchive
+
+# Build artifacts
+*.ipa
+*.apk
+*.aab
