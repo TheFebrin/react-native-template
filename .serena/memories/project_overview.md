@@ -1,0 +1,12 @@
+# Project Overview
+- Purpose: Expo (React Native) app named "reminders" using Expo Router for file-based routing.
+- Tech stack: Expo SDK (54), React 19, React Native 0.81, Expo Router, NativeWind/Tailwind CSS, TypeScript (strict), ESLint (expo config).
+- Entry point: Expo Router ("main": "expo-router/entry").
+- Key structure:
+  - app/: Expo Router screens/layouts (file-based routing)
+  - components/: reusable UI components
+  - hooks/: custom hooks (e.g. theming)
+  - constants/: app-wide constants
+  - assets/: images/fonts/static
+  - scripts/: maintenance scripts (e.g. reset-project)
+- Config: app.json holds app metadata, icons, splash, plugins; tsconfig.json defines @/ alias.
