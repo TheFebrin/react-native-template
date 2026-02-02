@@ -2,9 +2,9 @@
 
 An **opinionated Expo (React Native) starter template** designed for:
 
-* fast iteration on new product ideas
-* long-term codebase health
-* AI-assisted development without architectural decay
+- fast iteration on new product ideas
+- long-term codebase health
+- AI-assisted development without architectural decay
 
 This repository is **not a concrete product**.
 It is a **template** intended to be cloned and adapted for future projects.
@@ -15,16 +15,16 @@ It is a **template** intended to be cloned and adapted for future projects.
 
 ### For Humans
 
-* Clone this repo to start a new React Native project
-* Replace placeholder names, bundle identifiers, and metadata
-* Extend the architecture, do not fight it
+- Clone this repo to start a new React Native project
+- Replace placeholder names, bundle identifiers, and metadata
+- Extend the architecture, do not fight it
 
 ### For AI Agents
 
-* Read `AGENTS.md` before making changes
-* Follow spec-driven development via `.ai/spec/`
-* Prefer global architectural fixes over local patches
-* Keep files small, composable, and explicit
+- Read `AGENTS.md` before making changes
+- Follow spec-driven development via `.ai/spec/`
+- Prefer global architectural fixes over local patches
+- Keep files small, composable, and explicit
 
 If a change “works” but degrades structure, it is incorrect.
 
@@ -34,10 +34,10 @@ If a change “works” but degrades structure, it is incorrect.
 
 After creating a new project from this template, you **must**:
 
-* Rename the app (display name + internal identifiers)
-* Update bundle identifiers (`app.json`, `eas.json`)
-* Replace placeholder icons, splash screens, and metadata
-* Update this README with project-specific context
+- Rename the app (display name + internal identifiers)
+- Update bundle identifiers (`app.json`, `eas.json`)
+- Replace placeholder icons, splash screens, and metadata
+- Update this README with project-specific context
 
 AI agents should **prompt the user** for missing values rather than guessing.
 
@@ -69,10 +69,10 @@ This template assumes **spec-first development**.
 
 ### `.ai/spec/`
 
-* Each meaningful feature or domain rule should have a spec
-* Specs describe *what* and *why*, not implementation details
-* Specs are the source of truth
-* Code must follow the spec, not reinterpret it
+- Each meaningful feature or domain rule should have a spec
+- Specs describe _what_ and _why_, not implementation details
+- Specs are the source of truth
+- Code must follow the spec, not reinterpret it
 
 If a spec is missing or outdated, update the spec **before** coding.
 
@@ -82,13 +82,12 @@ If a spec is missing or outdated, update the spec **before** coding.
 
 ### `.ai/skills/`
 
-* Contains reusable AI instructions (“skills”)
-* Skills define *how* agents should perform recurring tasks
-* Skills must be:
-
-  * generic
-  * reusable
-  * free of project-specific hacks
+- Contains reusable AI instructions (“skills”)
+- Skills define _how_ agents should perform recurring tasks
+- Skills must be:
+  - generic
+  - reusable
+  - free of project-specific hacks
 
 If a task repeats, extract a skill.
 
@@ -106,9 +105,9 @@ gh issue develop <ISSUE_NUMBER>
 
 Rules:
 
-* No feature work without an issue
-* Issues should be spec-driven and testable
-* Branches should be short-lived and focused
+- No feature work without an issue
+- Issues should be spec-driven and testable
+- Branches should be short-lived and focused
 
 ---
 
@@ -159,11 +158,10 @@ eas submit --platform ios --latest
 
 ### Notes
 
-* Requires Apple Developer account and App Store Connect app record
-* `eas.json` enables auto-incrementing build numbers for production
-* `app.json` sets `ITSAppUsesNonExemptEncryption=false`
-
-  * Only valid if your app does not use non-exempt encryption
+- Requires Apple Developer account and App Store Connect app record
+- `eas.json` enables auto-incrementing build numbers for production
+- If applicable, set `ios.infoPlist.ITSAppUsesNonExemptEncryption=false` in `app.json`
+  - Only valid if your app does not use non-exempt encryption
 
 ---
 
@@ -187,10 +185,10 @@ npx eas-cli deploy --prod
 
 This template does **not** aim to:
 
-* Provide a finished app
-* Lock you into a specific state library
-* Hide complexity behind magic abstractions
-* Optimize prematurely
+- Provide a finished app
+- Lock you into a specific state library
+- Hide complexity behind magic abstractions
+- Optimize prematurely
 
 It exists to keep projects **clean as they grow**, especially under AI-assisted development.
 
@@ -202,10 +200,10 @@ This repository is designed to **resist entropy**.
 
 If your change:
 
-* increases coupling
-* hides responsibility
-* introduces duplication
-* prioritizes speed over structure
+- increases coupling
+- hides responsibility
+- introduces duplication
+- prioritizes speed over structure
 
 Stop and refactor.
 

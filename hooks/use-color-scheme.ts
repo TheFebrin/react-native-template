@@ -1,8 +1,7 @@
-import { useColorScheme as useReactNativeColorScheme } from "react-native";
+import { useColorScheme as useReactNativeColorScheme } from 'react-native';
 
-export type AppColorScheme = "light" | "dark";
+import { normalizeColorScheme, type AppColorScheme } from '@/hooks/color-scheme';
 
 export function useColorScheme(): AppColorScheme {
-  const scheme = useReactNativeColorScheme();
-  return scheme === "dark" ? "dark" : "light";
+  return normalizeColorScheme(useReactNativeColorScheme());
 }

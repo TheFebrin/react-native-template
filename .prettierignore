@@ -1,0 +1,16 @@
+node_modules/
+.expo/
+.ai/
+.serena/
+ios/
+android/
+web-build/
+dist/
+coverage/
+*.xcresult
+*.xcarchive
+*.xcodeproj
+*.xcworkspace
+*.pbxproj
+package-lock.json
+AGENTS.md
