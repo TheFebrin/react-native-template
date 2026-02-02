@@ -195,6 +195,14 @@ Rules:
 * Skills should not contain project-specific hacks
 * When a task repeats, extract a skill
 
+### Mandatory Skills (Always Apply)
+
+The following skills are present in this repo and **must be used whenever they are relevant**:
+
+* `.ai/skills/vercel-react-native-skills/` — **always use when developing** in this codebase
+* `.ai/skill/FRONTEND_DESIGNER.md`
+* `.ai/skill/WEB_DESIGN_GUIDELINES.md`
+
 ---
 
 ## Development Workflow
